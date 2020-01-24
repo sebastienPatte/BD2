@@ -1,0 +1,289 @@
+
+SQL*Plus: Release 12.2.0.1.0 Production on Fri Jan 24 11:36:48 2020
+
+Copyright (c) 1982, 2016, Oracle.  All rights reserved.
+
+Last Successful login time: Fri Jan 24 2020 11:24:09 +01:00
+
+Connected to:
+Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production
+With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+1 row created.
+
+Commit complete.
+
+       IDV VILLE	ACTIVITE	 PRIX	CAPACITE
+---------- ------------ ---------- ---------- ----------
+	10 Rio		kitesurf	   50	     200
+
+
+1 row created.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+       IDV VILLE	ACTIVITE	 PRIX	CAPACITE
+---------- ------------ ---------- ---------- ----------
+	10 Rio		kitesurf	   50	     200
+	11 Shanghai	kitesurf	   35	     350
+
+
+       IDV VILLE	ACTIVITE	 PRIX	CAPACITE
+---------- ------------ ---------- ---------- ----------
+	10 Rio		kitesurf	   50	     200
+	11 Shanghai	kitesurf	   35	     350
+
+SP2-0224: invalid starting line number
+SP2-0734: unknown command beginning "et dont la..." - rest of line ignored.
+SP2-0734: unknown command beginning "Pour bien ..." - rest of line ignored.
+SP2-0042: unknown command "*/" - rest of line ignored.
+
+1 row created.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+       IDV VILLE	ACTIVITE	 PRIX	CAPACITE
+---------- ------------ ---------- ---------- ----------
+	10 Rio		kitesurf	   50	     200
+	11 Shanghai	kitesurf	   35	     350
+	12 Paris	poney		   45	      15
+	13 Shanghai	kitesurf	   35	      12
+
+where activite = 'kitesurf'
+*
+ERROR at line 4:
+ORA-01747: invalid user.table.column, table.column, or column specification
+
+
+
+       IDS	  IDC	     IDV       JOUR
+---------- ---------- ---------- ----------
+       100	    2	      11	365
+
+
+1 row created.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+       IDS	  IDC	     IDV       JOUR
+---------- ---------- ---------- ----------
+       100	    2	      11	365
+       101	   15	      10	 21
+       102	   15	      11	210
+       103	   56	      12	 17
+       104	   56	      13	178
+
+
+       IDS	  IDC	     IDV       JOUR
+---------- ---------- ---------- ----------
+       100	    2	      11	365
+       101	   15	      10	 21
+       102	   15	      11	210
+       103	   56	      12	 17
+       104	   56	      13	178
+
+SP2-0734: unknown command beginning "IDS	     ..." - rest of line ignored.
+SP2-0734: unknown command beginning "remarque p..." - rest of line ignored.
+SP2-0042: unknown command "*/" - rest of line ignored.
+
+  COUNT(*)
+----------
+	 2
+
+
+2 rows deleted.
+
+Commit complete.
+
+       IDS	  IDC	     IDV       JOUR
+---------- ---------- ---------- ----------
+       100	    2	      11	365
+       102	   15	      11	210
+       104	   56	      13	178
+
+
+       IDS	  IDC	     IDV       JOUR
+---------- ---------- ---------- ----------
+       100	    2	      11	365
+       102	   15	      11	210
+       104	   56	      13	178
+
+SP2-0734: unknown command beginning "IDS	     ..." - rest of line ignored.
+SP2-0042: unknown command "*/" - rest of line ignored.
+
+1 row created.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+       IDC NOM		     AGE      AVOIR
+---------- ---------- ---------- ----------
+	 1 Riton	      23       1700
+	 8 Rita 	      22       2000
+	10 Rantamplan		       2000
+
+
+       IDV VILLE	ACTIVITE	 PRIX	CAPACITE
+---------- ------------ ---------- ---------- ----------
+	10 Rio		kitesurf	   50	     200
+	11 Shanghai	kitesurf	   35	     350
+	12 Paris	poney		   45	      15
+	13 Shanghai	kitesurf	   35	      12
+
+
+       IDS	  IDC	     IDV       JOUR
+---------- ---------- ---------- ----------
+       100	    2	      11	365
+       102	   15	      11	210
+       104	   56	      13	178
+
+
+       IDC NOM		     AGE      AVOIR
+---------- ---------- ---------- ----------
+	 1 Riton	      23       1700
+	 8 Rita 	      22       2000
+	10 Rantamplan		       2000
+
+
+       IDV	 PRIX ACTIVITE
+---------- ---------- ----------
+	12	   45 poney
+
+
+1 row updated.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+       IDV	 PRIX ACTIVITE
+---------- ---------- ----------
+	13	   35 kitesurf
+	11	   35 kitesurf
+
+
+1 row updated.
+
+Commit complete.
+
+1 row created.
+
+Commit complete.
+
+       IDV VILLE	ACTIVITE	 PRIX	CAPACITE
+---------- ------------ ---------- ---------- ----------
+	10 Rio		kitesurf	   50	     200
+	11 Shanghai	kitesurf	   35	     350
+	12 Paris	poney		   45	      15
+	13 Shanghai	kitesurf	   35	      12
+
+
+       IDS	  IDC	     IDV       JOUR
+---------- ---------- ---------- ----------
+       100	    2	      11	365
+       106	    1	      11	365
+       102	   15	      11	210
+       104	   56	      13	178
+       105	    8	      12	 89
+
+
+       IDC NOM		     AGE      AVOIR
+---------- ---------- ---------- ----------
+	 1 Riton	      23       1580
+	 8 Rita 	      22       1955
+	10 Rantamplan		       2000
+
+
+       IDV VILLE	ACTIVITE	 PRIX
+---------- ------------ ---------- ----------
+	10 Rio		kitesurf	   50
+
+
+       IDC NOM		     AGE      AVOIR
+---------- ---------- ---------- ----------
+	 8 Rita 	      22       1955
+
+
+       IDS	  IDV	    JOUR
+---------- ---------- ----------
+       105	   12	      89
+
+and v.idv = s.idv	;    --  "auto jointure"
+                 	*
+ERROR at line 4:
+ORA-00933: SQL command not properly ended
+
+
+
+       IDV VILLE	ACTIVITE	 PRIX	CAPACITE
+---------- ------------ ---------- ---------- ----------
+	10 Rio		kitesurf	   50	     200
+	11 Shanghai	kitesurf	   35	     350
+	12 Paris	poney		   45	      15
+	13 Shanghai	kitesurf	   35	      12
+
+
+       IDS	  IDC	     IDV       JOUR
+---------- ---------- ---------- ----------
+       100	    2	      11	365
+       102	   15	      11	210
+       104	   56	      13	178
+       105	    8	      12	 89
+       106	    1	      11	365
+
+
+       IDC NOM		     AGE      AVOIR
+---------- ---------- ---------- ----------
+	 1 Riton	      23       1580
+	 8 Rita 	      22       1955
+	10 Rantamplan		       2000
+
+SQL> 

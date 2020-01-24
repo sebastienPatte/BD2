@@ -1,0 +1,50 @@
+Programeur :
+	0 -creer tables :
+		client
+		village
+		séjour
+
+Employé :
+	1 - créer village
+	2 - consulter village
+	3 - modfier village
+	4 - créer séjours
+	5 - consulter séjours
+	6 - supprimer séjours
+	
+Client:
+	7 - créer compte
+	8 - acheter un séjour
+	9 - consulter village ou il n'y a aucun séjour
+	10 - consulter les lignes/infos le concernant dans 3 tables
+	
+Système :
+	11 - archiver un séjour
+	
+	
+Action 0 : 	
+	CREATE TABLE Client  (idc Int, nom VARCHAR, avoir Int); 
+	CREATE TABLE Village (idv Int, ville VARCHAR, activite VARCHAR, prix , capacite);
+	CREATE TABLE Sejour (ids Int, idc Int, idv Int, jour VARCHAR);
+ 	
+Action 1 :
+	create sequence seq_village start with 0 increment by 1 //à faire au début
+	CreerVillage(v,a,p,c):
+		INSERT INTO Village values (seq_village.nextval, v, a, p, c);
+
+Action 2 :
+	ConsulterVillage(id):
+	SELECT * FROM Village;
+
+Action 3 :
+	ModifierVillage(id,a,c):
+		UPDATE Village set activite = a, capacite = c WHERE idv=id ;
+	
+Action 4 :
+	create sequence seq_sejours start with 0 increment by 1 //à faire au début
+	CreerSejour(idc,idv,j):
+		INSERT INTO Sejours values (seq_sejours.nextval,idc,idv,j);
+		
+Action 5 :
+	ConsulterSejour (id):
+		ConsulterVillage (SELECT idv FROM Sejour WHERE ids=id);
