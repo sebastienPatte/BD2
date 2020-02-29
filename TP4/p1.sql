@@ -590,9 +590,34 @@ exec consulter_informations(2);
 	
 	
 create or replace procedure trait2(
-	l_idc client.idc%type)
+	l_idc client.idc%type,
+    la_ville village.ville%type,
+    le_jour sejour.jour%type,
+    l_idv out village.idv%type,
+    l_ids out sejour.ids%type,
+    l_activite out village.activite%type)
 is
+	cursor c is
+		select idv, prix, activite
+		from village
+		where ville = la_ville
+		order by prix desc;
+	le_prix village.prix%type;
 begin
+	open c;
+	fetch c into l_idv, le_prix, l_activite;
+	if c%found then 
+		l_ids := seq_sejour.nextval;
+		insert into sejour
+			values(l_ids, l_idc, l_idv, le_jour);
+		update client
+			set avoir = avoir - le_prix
+			where idc = l_idc;
+	else
+		l_idv := -1;
+		l_ids := -1;
+		l_activite := 'neant';
+	end if;
 end;
 /
 	
