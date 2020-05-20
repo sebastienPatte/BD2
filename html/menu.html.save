@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="fr">
+	<head>
+  		<meta charset="utf-8">
+		<title>menu</title>
+	</head>
+<body>
+
+	<h1>traitement 2</h1>
+	<form  action="trait2.php">
+		<p>village</p> 
+		<input type="text" name="village">
+		<p>jour</p>
+		<input type="number" name="jour">
+		<input type="number" name="idc">
+		<input type="submit">
+        </form>  
+
+	<h1>traitement 2 sans appel procedure</h1>
+
+        <form  action="trait2SansProc.php">
+                <input type="text" name="village">
+                <input type="number" name="jour">
+                <input type="number" name="idc">
+                <input type="submit">
+        </form>
+	
+	<h1>traitement 3</h1>
+        <form  action="trait3.php">
+                <input type="number" name="j">
+                <input type="submit">
+        </form>
+
+        <h1>fonction traitement 3</h1>
+        <form  action="fTrait3.php">
+                <input type="number" name="j">
+                <input type="submit">
+        </form>
+</body>
+</html>
+

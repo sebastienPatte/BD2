@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="fr">
+	<head>
+  		<meta charset="utf-8">
+		<title>menu</title>
+	</head>
+<body>
+	<h1>traitement 3 (suppression séjours)</h1>
+        <form  action="fTrait3.php">
+                <p>Jour</p>
+                <input type="number" name="j">
+                <input type="submit">
+        </form>
+
+	<h1>authentification</h1>
+	<form  action="auth.php">
+                <p>idc | nom</p>
+                <input type="number" name="id">
+	       <input type="text" name="nom">
+               <input type="submit">
+        </form>	
+
+        <h1>traitement 3 (suppression séjours) sans appel PL/SQL</h1>
+        <form  action="trait3.php">
+                <p>Jour</p>
+                <input type="number" name="j">
+                <input type="submit">
+        </form>
+
+	<h1>consultation village réservés</h1>
+        <form  action="afficheVillage.php">
+                <p>idc</p>
+                <input type="number" name="id">
+                <input type="submit">
+        </form>
+	
+	<h1>traitement 1 (inscription client)</h1>
+        <form  action="fTraitement1.php">
+                <p>nom | age</p>
+                <input type="text" name="nom">
+                <input type="number" name="age">
+                <input type="submit">
+        </form>	
+
+	<h1>traitement 1 (inscription client) sans appel PL/SQL</h1>
+        <form  action="traitement1.php">
+                <p>nom | age</p>
+		<input type="text" name="nom">
+                <input type="number" name="age">
+                <input type="submit">
+        </form>
+	
+	<h1>traitement 2 (achat séjour)</h1>
+	<form  action="trait2.php">
+		<p>Village | Jour | idc</p>
+		<input type="text" name="village">
+		
+		<input type="number" name="jour">
+		<input type="number" name="idc">
+		<input type="submit">
+        </form>  
+
+	<h1>traitement 2 (achat séjour) sans appel PL/SQL</h1>
+
+        <form  action="trait2SansProc.php">
+		<p>Village | Jour | idc</p>
+                <input type="text" name="village">
+                <input type="number" name="jour">
+                <input type="number" name="idc">
+                <input type="submit">
+        </form>
+
+</body>
+</html>
+

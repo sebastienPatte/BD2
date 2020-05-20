@@ -1,0 +1,14 @@
+
+<?php
+	if(isset($_REQUEST['j'])){
+		$c = ocilogon("c##spatte_a", "spatte_a", 'dbinfo');
+		$txt = "BEGIN dbms_output.put_line(funTrait3(".$_REQUEST['j'].")); END;";
+		$ordre = ociparse($c, $txt);
+		ociexecute($ordre);
+
+		echo "requete = ".$txt."<br>";
+		oci_close($c);
+	}else{
+		echo "erreur arguments<br>";
+	}
+?>
